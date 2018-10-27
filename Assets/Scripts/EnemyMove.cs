@@ -14,9 +14,26 @@ public class EnemyMove : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        // カメラに向かう方向を計算
+        Vector3 forward = transform.position - DelayCameraPos.GetDelayCameraPos();
+
+        if (forward != Vector3.zero) // 零ベクトルでない
+        {
+            // カメラの向きを正面とする回転を作成して適用
+            transform.rotation = Quaternion.LookRotation(forward);
+        }
+
+        var e = transform.eulerAngles;
+
+        e.x = 90;
+
+        transform.eulerAngles = e;
+
         lookCamera = this.GetComponent<LookCamera>();
 
-        this.transform.DORotate(new Vector3(0, 0, 0), duration).OnComplete(() => lookCamera.enabled = true);
+        e.x = 0;
+
+        this.transform.DORotate(e, duration).OnComplete(() => lookCamera.enabled = true);
 
         Observable.Timer(TimeSpan.FromSeconds(duration + lifetime)).Subscribe(exit).AddTo(this);
     }
