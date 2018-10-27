@@ -46,7 +46,7 @@ public class EnemyMove : MonoBehaviour
 
         angle.x = 90;
 
-        this.transform.DORotate(angle, duration).OnComplete(() => Destroy(this));
+        this.transform.DORotate(angle, duration).OnComplete(() => Destroy(this.gameObject));
     }
 
     // Update is called once per frame
