@@ -1700,7 +1700,7 @@ GameObject:
   - component: {fileID: 1340984686}
   - component: {fileID: 1340984685}
   m_Layer: 11
-  m_Name: Cylinder (1)
+  m_Name: cannon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
