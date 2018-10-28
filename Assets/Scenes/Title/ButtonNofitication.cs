@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace My.GUI
+namespace Park.Title
 {
     public class ButtonBase : MonoBehaviour
     {

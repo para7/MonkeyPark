@@ -4,7 +4,7 @@ using UniRx;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace My.GUI
+namespace Park.Title
 {
     public class Setting : ButtonBase
     {
@@ -12,7 +12,7 @@ namespace My.GUI
         public class SlotElement
         {
             public string str = "";
-            public double difficulty = 0.0;
+            public float difficulty = 0.0f;
         }
 
         public SlotElement[] elements;
@@ -49,6 +49,11 @@ namespace My.GUI
         void OnChangeIndex()
         {
             text.text = elements[cursor].str;
+        }
+
+        public SlotElement GetInfo()
+        {
+            return elements[cursor];
         }
     }
 }

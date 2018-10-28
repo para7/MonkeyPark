@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace My.Title
+namespace Park.Title
 {
     public class Exit : MonoBehaviour
     {

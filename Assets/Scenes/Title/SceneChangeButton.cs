@@ -3,13 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using Para7.Utilities;
 using UnityEngine.SceneManagement;
+using Park.Score;
 
-public class SceneChangeButton : MonoBehaviour
+namespace Park.Title
 {
-    [SerializeField] string nextscenename = "";
-
-    public void OnClick()
+    public class SceneChangeButton : MonoBehaviour
     {
-        SceneManager.LoadSceneAsync(nextscenename);
+        [SerializeField] string nextscenename = "";
+
+        public void OnClick()
+        {
+            SceneManager.LoadSceneAsync(nextscenename);
+        }
     }
 }
