@@ -29,7 +29,7 @@ namespace Park.Enemy
         {
             if (isDead)
             {
-                //吹き飛び
+                //吹き飛び移動
                 transform.position += flyingSpeed * Time.deltaTime * 28f;
                 flyingSpeed.y -= Time.deltaTime * 9f;
                 transform.localEulerAngles += new Vector3(0,0, Time.deltaTime * 1100f);
@@ -58,7 +58,7 @@ namespace Park.Enemy
 
         public void OnHeadShot()
         {
-            hp -= 5.0f;
+            hp -= 1.5f;
         }
     }
 }
