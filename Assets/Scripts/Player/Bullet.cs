@@ -18,6 +18,7 @@ namespace Park.Player
         public float fallSpeed = -0.3f;
         public float shake = 0.1f;
         public float dashShake = 0.8f;
+        public float speedadj = 0.75f;
 
         private Vector3 randomSpd;
 
@@ -36,23 +37,31 @@ namespace Park.Player
             randomSpd = new Vector3(Random.Range(-random, random), Random.Range(-random, random), Random.Range(-random, random));
         }
 
-        // Update is called once per frame
         void FixedUpdate()
         {
-            this.transform.position += this.transform.forward * Time.deltaTime * speed + randomSpd;
-
             time += Time.deltaTime;
-
-            if (time > lifetime / 2)
-            {
-                speed *= 0.95f;
-                transform.position += new Vector3(0, fallSpeed, 0);
-            }
 
             if (time > lifetime)
             {
                 Destroy(this.gameObject);
+
+                return;
             }
+
+            //弾が進む
+            this.transform.position += this.transform.forward * Time.deltaTime * speed + randomSpd;
+
+            //時間減速
+            if (time > lifetime / 2)
+            {
+                speed *= speedadj;
+                transform.position += new Vector3(0, fallSpeed, 0);
+            }
+        }
+
+        public void OnHit()
+        {
+            lifetime = 0;
         }
     }
 }

@@ -41,6 +41,7 @@ GameObject:
   - component: {fileID: 4886797683385224}
   - component: {fileID: 212270399000352288}
   - component: {fileID: 65559500385236082}
+  - component: {fileID: 114123701615870720}
   m_Layer: 9
   m_Name: Monkey
   m_TagString: Untagged
@@ -59,6 +60,7 @@ GameObject:
   - component: {fileID: 33523008923848702}
   - component: {fileID: 23871467529123028}
   - component: {fileID: 65561107452711892}
+  - component: {fileID: 114393355612508840}
   m_Layer: 0
   m_Name: Head
   m_TagString: Untagged
@@ -228,6 +230,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   duration: 1
   lifetime: 20
+--- !u!114 &114123701615870720
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1320047889548190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b05c507c9197647bfb09c9138b037ce9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114393355612508840
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1822530861565216}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a0d848c1d7514884925e08886901994, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114851729143335080
 MonoBehaviour:
   m_ObjectHideFlags: 1
