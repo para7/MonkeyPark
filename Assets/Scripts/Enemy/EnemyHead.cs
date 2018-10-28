@@ -6,12 +6,12 @@ namespace Park.Enemy
 {
     public class EnemyHead : MonoBehaviour
     {
-        EnemyBody body;
+        public EnemyBody body;
 
         // Use this for initialization
         void Start()
         {
-            body = GetComponent<EnemyBody>();
+
         }
 
         // Update is called once per frame
@@ -29,9 +29,9 @@ namespace Park.Enemy
                 return;
             }
 
-            Debug.Log("HeadShot");
-
             other.gameObject.GetComponent<Player.Bullet>().OnHit();
+
+            body.OnHeadShot();
         }
     }
 }
