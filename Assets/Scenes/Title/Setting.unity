@@ -642,7 +642,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1885702648103602, guid: 1c9feb2d54df84d34b90933b0f81cdd3, type: 2}
       propertyPath: m_Name
-      value: Menu (1)
+      value: subject
       objectReference: {fileID: 0}
     - target: {fileID: 114995715394600566, guid: 1c9feb2d54df84d34b90933b0f81cdd3,
         type: 2}
@@ -693,6 +693,26 @@ Prefab:
         type: 2}
       propertyPath: m_AnchoredPosition.y
       value: -86
+      objectReference: {fileID: 0}
+    - target: {fileID: 114846680735122098, guid: 1c9feb2d54df84d34b90933b0f81cdd3,
+        type: 2}
+      propertyPath: elements.Array.data[0].difficulty
+      value: 2.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114846680735122098, guid: 1c9feb2d54df84d34b90933b0f81cdd3,
+        type: 2}
+      propertyPath: elements.Array.data[1].difficulty
+      value: 1.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 114846680735122098, guid: 1c9feb2d54df84d34b90933b0f81cdd3,
+        type: 2}
+      propertyPath: elements.Array.data[3].difficulty
+      value: 2.715
+      objectReference: {fileID: 0}
+    - target: {fileID: 114846680735122098, guid: 1c9feb2d54df84d34b90933b0f81cdd3,
+        type: 2}
+      propertyPath: elements.Array.data[2].difficulty
+      value: 1.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1c9feb2d54df84d34b90933b0f81cdd3, type: 2}
@@ -807,7 +827,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1885702648103602, guid: 1c9feb2d54df84d34b90933b0f81cdd3, type: 2}
       propertyPath: m_Name
-      value: Text
+      value: date
       objectReference: {fileID: 0}
     - target: {fileID: 114995715394600566, guid: 1c9feb2d54df84d34b90933b0f81cdd3,
         type: 2}
@@ -862,27 +882,27 @@ Prefab:
     - target: {fileID: 114846680735122098, guid: 1c9feb2d54df84d34b90933b0f81cdd3,
         type: 2}
       propertyPath: elements.Array.data[0].difficulty
-      value: 1
+      value: 1.8
       objectReference: {fileID: 0}
     - target: {fileID: 114846680735122098, guid: 1c9feb2d54df84d34b90933b0f81cdd3,
         type: 2}
       propertyPath: elements.Array.data[1].difficulty
-      value: 1.2
+      value: 2.15
       objectReference: {fileID: 0}
     - target: {fileID: 114846680735122098, guid: 1c9feb2d54df84d34b90933b0f81cdd3,
         type: 2}
       propertyPath: elements.Array.data[2].difficulty
-      value: 1.4
+      value: 2.2
       objectReference: {fileID: 0}
     - target: {fileID: 114846680735122098, guid: 1c9feb2d54df84d34b90933b0f81cdd3,
         type: 2}
       propertyPath: elements.Array.data[3].difficulty
-      value: 1.5
+      value: 2.715
       objectReference: {fileID: 0}
     - target: {fileID: 114846680735122098, guid: 1c9feb2d54df84d34b90933b0f81cdd3,
         type: 2}
       propertyPath: elements.Array.data[4].difficulty
-      value: 1.2
+      value: 2.3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1c9feb2d54df84d34b90933b0f81cdd3, type: 2}
@@ -999,6 +1019,35 @@ Prefab:
         type: 2}
       propertyPath: m_AnchoredPosition.y
       value: -86
+      objectReference: {fileID: 0}
+    - target: {fileID: 1885702648103602, guid: 1c9feb2d54df84d34b90933b0f81cdd3, type: 2}
+      propertyPath: m_Name
+      value: time
+      objectReference: {fileID: 0}
+    - target: {fileID: 114846680735122098, guid: 1c9feb2d54df84d34b90933b0f81cdd3,
+        type: 2}
+      propertyPath: elements.Array.data[2].difficulty
+      value: 2.715
+      objectReference: {fileID: 0}
+    - target: {fileID: 114846680735122098, guid: 1c9feb2d54df84d34b90933b0f81cdd3,
+        type: 2}
+      propertyPath: elements.Array.data[3].difficulty
+      value: 2.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114846680735122098, guid: 1c9feb2d54df84d34b90933b0f81cdd3,
+        type: 2}
+      propertyPath: elements.Array.data[0].difficulty
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 114846680735122098, guid: 1c9feb2d54df84d34b90933b0f81cdd3,
+        type: 2}
+      propertyPath: elements.Array.data[1].difficulty
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114846680735122098, guid: 1c9feb2d54df84d34b90933b0f81cdd3,
+        type: 2}
+      propertyPath: elements.Array.data[4].difficulty
+      value: 1.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1c9feb2d54df84d34b90933b0f81cdd3, type: 2}
