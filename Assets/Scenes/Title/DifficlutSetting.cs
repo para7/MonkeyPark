@@ -22,7 +22,11 @@ namespace Park.Title
             float dif = 1f;
             dif *= date.GetInfo().difficulty;
             dif *= time.GetInfo().difficulty;
-            dif*= subject.GetInfo().difficulty;
+            dif *= subject.GetInfo().difficulty;
+
+            DifficlutySystem.difficulty = dif;
+
+            Debug.Log(dif);
         }
 
         private void SetClassText()
