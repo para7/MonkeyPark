@@ -6,12 +6,6 @@ namespace Park.Player
 {
     public class Bullet : MonoBehaviour
     {
-        // Use this for initialization
-        void Start()
-        {
-
-        }
-
         public float speed = 50f;
         public float lifetime = 0.3f;
         private float time = 0;
@@ -22,7 +16,7 @@ namespace Park.Player
 
         private Vector3 randomSpd;
 
-        private void Awake()
+        private void Start()
         {
             speed += Random.Range(-speed / 20f, speed / 20f);
 

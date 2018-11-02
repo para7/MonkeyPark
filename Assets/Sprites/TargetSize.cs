@@ -8,6 +8,10 @@ public class TargetSize : MonoBehaviour
 
     private Vector3 nomal, dash;
 
+    private float ease;
+
+    public float easetime = 1f;
+
     // Use this for initialization
     void Start()
     {
@@ -19,14 +23,23 @@ public class TargetSize : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //イージングの手実装
         if (Input.GetKey(KeyCode.LeftShift))
         {
-            transform.localScale = dash;
+            ease += Time.deltaTime;
         }
         else
         {
-            transform.localScale = nomal;
+            ease -= Time.deltaTime;
         }
+
+        ease = Mathf.Clamp(ease, 0f, easetime);
+
+        var adj = ease / easetime;
+
+        var size = nomal * (1 - adj) + dash * adj;
+
+        transform.localScale = size;
     }
 
 }
