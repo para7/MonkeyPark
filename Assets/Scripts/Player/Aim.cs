@@ -26,7 +26,7 @@ public class Aim : MonoBehaviour
         RaycastHit hit;
 
         // シーンビューにRayを可視化するデバッグ（必要がなければ消してOK）
-        //Debug.DrawRay(ray.origin, ray.direction * range, Color.red, 0.0f);
+        Debug.DrawRay(ray.origin, ray.direction * range, Color.red, 0.0f);
 
         // Rayのhit情報を取得する
         if (Physics.Raycast(ray, out hit, range))

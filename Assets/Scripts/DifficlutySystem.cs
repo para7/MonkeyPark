@@ -6,7 +6,7 @@ namespace Park.Score
 {
     static public class DifficlutySystem
     {
-        public static float difficulty = 7.0f;
+        public static float difficulty = 10.0f * 0.2f;
         public static string date, time, subject;
 
         static public string GetClassInfo()

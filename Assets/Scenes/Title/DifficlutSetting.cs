@@ -10,6 +10,8 @@ namespace Park.Title
     {
         public Setting date, time, subject;
 
+        [SerializeField] float difficutAdj = 1f;
+
         public void OnClick()
         {
             CalcDifficluty();
@@ -17,9 +19,10 @@ namespace Park.Title
             SetClassText();
         }
 
+
         private void CalcDifficluty()
         {
-            float dif = 1f;
+            float dif = difficutAdj;
             dif *= date.GetInfo().difficulty;
             dif *= time.GetInfo().difficulty;
             dif *= subject.GetInfo().difficulty;

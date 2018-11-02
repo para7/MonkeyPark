@@ -563,6 +563,7 @@ MonoBehaviour:
   date: {fileID: 1395808163}
   time: {fileID: 719577733}
   subject: {fileID: 1427037427}
+  difficutAdj: 0.2
 --- !u!1 &782725476
 GameObject:
   m_ObjectHideFlags: 0
