@@ -163,7 +163,7 @@ Prefab:
     - target: {fileID: 224623351407563734, guid: 7c4797119b10e477c8983fc68d13ea8e,
         type: 2}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 224623351407563734, guid: 7c4797119b10e477c8983fc68d13ea8e,
         type: 2}
@@ -350,11 +350,11 @@ RectTransform:
   m_Children:
   - {fileID: 1934030921}
   - {fileID: 782725477}
+  - {fileID: 1175238624}
   - {fileID: 980417100}
   - {fileID: 1575828503}
   - {fileID: 1379295240}
   - {fileID: 7146272}
-  - {fileID: 1175238624}
   - {fileID: 1543495469}
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -861,7 +861,7 @@ Prefab:
     - target: {fileID: 224778900692779870, guid: 1c9feb2d54df84d34b90933b0f81cdd3,
         type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 224778900692779870, guid: 1c9feb2d54df84d34b90933b0f81cdd3,
         type: 2}
@@ -1044,7 +1044,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 398734614}
-  m_RootOrder: 6
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1064,7 +1064,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -1136,7 +1136,7 @@ Prefab:
     - target: {fileID: 224778900692779870, guid: 1c9feb2d54df84d34b90933b0f81cdd3,
         type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 224778900692779870, guid: 1c9feb2d54df84d34b90933b0f81cdd3,
         type: 2}
@@ -1336,7 +1336,7 @@ Prefab:
     - target: {fileID: 224778900692779870, guid: 1c9feb2d54df84d34b90933b0f81cdd3,
         type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 224778900692779870, guid: 1c9feb2d54df84d34b90933b0f81cdd3,
         type: 2}
@@ -1647,7 +1647,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []

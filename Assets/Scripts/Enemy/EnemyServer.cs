@@ -10,6 +10,8 @@ namespace Park.Enemy
     {
         private Spawn[] spawns;
 
+        public int EnemyNum => spawns.Count(s => s.isUsing);
+
         [SerializeField] GameObject[] enemys;
 
         // Use this for initialization
@@ -27,13 +29,13 @@ namespace Park.Enemy
         {
             spawnable += Time.fixedDeltaTime;
 
-            if(spawnable > spawncool && Random.Range(0f, 100f) < DifficlutySystem.difficulty)
+            if (spawnable > spawncool && Random.Range(0f, 100f) < DifficlutySystem.difficulty)
             {
                 for (int i = 0; i < 10; ++i)
                 {
                     int index = Random.Range(0, spawns.Length - 1);
 
-                    if(spawns[index].isUsing)
+                    if (spawns[index].isUsing)
                     {
                         continue;
                     }

@@ -5,12 +5,14 @@ using UnityStandardAssets.Characters.FirstPerson;
 
 public class SensitivitySetting : MonoBehaviour
 {
-    public static float sensitivity = 5f; 
+    public static float sensitivity = 5f;
+
+    public FirstPersonController controller;
 
     // Use this for initialization
     void Start()
     {
-        GetComponent<MouseLook>().XSensitivity = sensitivity;
-        GetComponent<MouseLook>().YSensitivity = sensitivity;
+        controller.m_MouseLook.XSensitivity = sensitivity;
+        controller.m_MouseLook.YSensitivity = sensitivity;
     }
 }
