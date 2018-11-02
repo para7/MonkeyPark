@@ -30,12 +30,26 @@ namespace Park.Enemy
         // Update is called once per frame
         void Update()
         {
+            if (sestate != SeState.nose)
+            {
+                if (sestate == SeState.headse)
+                {
+                    headhistse.Play();
+                }
+                else if (sestate == SeState.nomalse)
+                {
+                    hitse.Play();
+                }
+
+                sestate = SeState.nose;
+            }
+
             if (isDead)
             {
                 //吹き飛び移動
                 transform.position += flyingSpeed * Time.deltaTime * 28f;
                 flyingSpeed.y -= Time.deltaTime * 9f;
-                transform.localEulerAngles += new Vector3(0,0, Time.deltaTime * 1100f);
+                transform.localEulerAngles += new Vector3(0, 0, Time.deltaTime * 1100f);
             }
             else if (hp < 0)
             {
@@ -50,6 +64,13 @@ namespace Park.Enemy
 
         public AudioSource hitse, headhistse;
 
+        enum SeState
+        {
+            nose, nomalse, headse
+        };
+
+        SeState sestate;
+
         private void OnTriggerEnter(Collider other)
         {
             var bullet = other.gameObject.GetComponent<Bullet>();
@@ -58,8 +79,10 @@ namespace Park.Enemy
                 return;
             }
 
-            hitse.Play();
-
+            if (sestate != SeState.headse)
+            {
+                sestate = SeState.nomalse;
+            }
             other.gameObject.GetComponent<Bullet>().OnHit();
 
             hp -= 1;
@@ -68,7 +91,7 @@ namespace Park.Enemy
 
         public void OnHeadShot()
         {
-            headhistse.Play();
+            sestate = SeState.headse;
 
             hp -= 2.5f;
         }

@@ -10,7 +10,7 @@ namespace Park.UI
     public class TimeDelete : MonoBehaviour
     {
         public float timer = 5f;
-        bool delete = false;
+        public bool delete = false;
 
         // Use this for initialization
         void Start()
