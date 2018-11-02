@@ -11,8 +11,12 @@ namespace Park.Title
     {
         [SerializeField] string nextscenename = "";
 
+        [SerializeField] AudioSource audiosource;
+
         public void OnClick()
         {
+            audiosource.Play();
+
             SceneManager.LoadSceneAsync(nextscenename);
         }
     }

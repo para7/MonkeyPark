@@ -229,7 +229,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   duration: 1
-  lifetime: 20
+  lifetime: 10
 --- !u!114 &114123701615870720
 MonoBehaviour:
   m_ObjectHideFlags: 1

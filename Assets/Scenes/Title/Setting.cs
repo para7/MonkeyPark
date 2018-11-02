@@ -19,8 +19,12 @@ namespace Park.Title
 
         private int cursor = 0;
 
+        [SerializeField] AudioSource se;
+
         public override void OnClick()
         {
+            se.Play();
+
             cursor += elements.Length - 1;
 
             cursor = cursor % elements.Length;
@@ -30,6 +34,7 @@ namespace Park.Title
 
         public override void OnClick2()
         {
+            se.Play();
             cursor++;
 
             cursor = cursor % elements.Length;

@@ -14,6 +14,8 @@ namespace Park.Player
 
         public float shotGenelateRange = 1f;
 
+        public AudioSource shotse;
+
         // Use this for initialization
         void Start()
         {
@@ -27,6 +29,8 @@ namespace Park.Player
 
             if (Input.GetAxis("Fire1") > 0.1 && cool < 0)
             {
+                shotse.Play();
+
                 var b = Instantiate(bullet);
                 b.transform.rotation = this.transform.rotation;
                 b.transform.position = this.transform.position + (-b.transform.up) * shotGenelateRange;
