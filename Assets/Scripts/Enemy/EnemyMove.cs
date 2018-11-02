@@ -43,6 +43,7 @@ namespace Park.Enemy
         }
 
         public AudioSource hidese;
+        public AudioSource deadse;
 
         private void exit(long _)
         {
@@ -67,6 +68,8 @@ namespace Park.Enemy
 
         public void OnDead()
         {
+            deadse.Play();
+
             disposable.Dispose();
 
             Observable.Timer(TimeSpan.FromSeconds(1f)).Subscribe(_ => Destroy(this.gameObject)).AddTo(this);

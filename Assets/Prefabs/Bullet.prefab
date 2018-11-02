@@ -115,8 +115,8 @@ MonoBehaviour:
   speed: 35
   lifetime: 0.5
   fallSpeed: -0.3
-  shake: 0.02
-  dashShake: 0.08
+  shake: 0.01
+  dashShake: 0.03
   speedadj: 0.9
 --- !u!135 &135631544600727024
 SphereCollider:
