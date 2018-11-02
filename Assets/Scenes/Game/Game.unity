@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.45128572, g: 0.50095266, b: 0.57327986, a: 1}
+  m_IndirectSpecularColor: {r: 0.45128602, g: 0.5009526, b: 0.57327974, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2161,7 +2161,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 90, y: 218}
+  m_AnchoredPosition: {x: 90, y: 275}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &804839012
@@ -2196,7 +2196,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "WASD \uFF1A\u79FB\u52D5\nShift\u30AD\u30FC\uFF1A\u30C0\u30C3\u30B7\u30E5\n\u30DE\u30A6\u30B9\u64CD\u4F5C\uFF1A\u8996\u70B9\u64CD\u4F5C\u3000\n\u5DE6\u30AF\u30EA\u30C3\u30AF\uFF1A\u5C04\u6483"
+  m_Text: "WASD \uFF1A\u79FB\u52D5\nShift\u30AD\u30FC\uFF1A\u30C0\u30C3\u30B7\u30E5\n\u30DE\u30A6\u30B9\u64CD\u4F5C\uFF1A\u8996\u70B9\u64CD\u4F5C\u3000\n\u5DE6\u30AF\u30EA\u30C3\u30AF\uFF1A\u5C04\u6483\n\u30B9\u30DA\u30FC\u30B9\uFF1A\u30B8\u30E3\u30F3\u30D7"
 --- !u!222 &804839013
 CanvasRenderer:
   m_ObjectHideFlags: 0
