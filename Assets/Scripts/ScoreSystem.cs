@@ -14,10 +14,11 @@ public class ScoreSystem : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        if(hiscore < score)
+        if (hiscore < score)
         {
             hiscore = score;
         }
+
         score = 0;
         text = GetComponent<Text>();
         basemessage = text.text;

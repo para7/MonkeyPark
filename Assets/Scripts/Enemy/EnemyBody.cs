@@ -24,7 +24,7 @@ namespace Park.Enemy
         void SetFlying()
         {
             flyingSpeed = transform.forward;
-            flyingSpeed.y = 1.7f;
+            flyingSpeed.y = 2f;
         }
 
         // Update is called once per frame

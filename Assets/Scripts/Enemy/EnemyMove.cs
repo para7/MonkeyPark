@@ -51,6 +51,8 @@ namespace Park.Enemy
             angle.x = 90;
 
             this.transform.DORotate(angle, duration).OnComplete(() => Destroy(this.gameObject));
+            
+            ScoreSystem.score -= 300;
         }
 
         // Update is called once per frame
@@ -63,7 +65,7 @@ namespace Park.Enemy
         {
             disposable.Dispose();
 
-            Observable.Timer(TimeSpan.FromSeconds(1f)).Subscribe(exit).AddTo(this);
+            Observable.Timer(TimeSpan.FromSeconds(1f)).Subscribe(_ => Destroy(this.gameObject)).AddTo(this);
 
             var colliders = GetComponentsInChildren<BoxCollider>();
 
