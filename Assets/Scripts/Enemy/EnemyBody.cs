@@ -48,6 +48,8 @@ namespace Park.Enemy
             }
         }
 
+        public AudioSource hitse, headhistse;
+
         private void OnTriggerEnter(Collider other)
         {
             var bullet = other.gameObject.GetComponent<Bullet>();
@@ -55,6 +57,8 @@ namespace Park.Enemy
             {
                 return;
             }
+
+            hitse.Play();
 
             other.gameObject.GetComponent<Bullet>().OnHit();
 
@@ -64,6 +68,8 @@ namespace Park.Enemy
 
         public void OnHeadShot()
         {
+            headhistse.Play();
+
             hp -= 2.5f;
         }
 

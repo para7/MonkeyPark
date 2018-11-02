@@ -42,8 +42,12 @@ namespace Park.Enemy
             disposable = Observable.Timer(TimeSpan.FromSeconds(duration + lifetime)).Subscribe(exit).AddTo(this);
         }
 
+        public AudioSource hidese;
+
         private void exit(long _)
         {
+            hidese.Play();
+
             lookCamera.enabled = false;
 
             var angle = gameObject.transform.localEulerAngles;
