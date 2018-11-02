@@ -709,7 +709,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   duration: 1
-  lifetime: 12
+  lifetime: 11
   hidese: {fileID: 82304061421274340}
   deadse: {fileID: 82856288597054446}
 --- !u!114 &114123701615870720
