@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Park.Player;
+using UniRx;
+using System;
 
 namespace Park.Enemy
 {
@@ -10,11 +12,12 @@ namespace Park.Enemy
         public float hp = 5.9f;
         private bool isDead = false;
         private Vector3 flyingSpeed;
+        private Spawn spawn;
 
         // Use this for initialization
         void Start()
         {
-
+            spawn = GetComponentInParent<Spawn>();
         }
 
         //吹き飛びを設定
@@ -39,6 +42,9 @@ namespace Park.Enemy
                 isDead = true;
                 SetFlying();
                 GetComponentInParent<LookCamera>().enabled = false;
+                GetComponentInParent<EnemyMove>().OnDead();
+                //スコア加算
+                ScoreSystem.score += 100;
             }
         }
 
@@ -58,7 +64,12 @@ namespace Park.Enemy
 
         public void OnHeadShot()
         {
-            hp -= 1.5f;
+            hp -= 2.5f;
+        }
+
+        private void OnDestroy()
+        {
+            spawn.isUsing = false;
         }
     }
 }

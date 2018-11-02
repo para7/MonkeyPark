@@ -13,6 +13,8 @@ namespace Park.Enemy
         public float duration = 1f;
         public float lifetime = 5f;
 
+        IDisposable disposable;
+
         // Use this for initialization
         void Start()
         {
@@ -37,7 +39,7 @@ namespace Park.Enemy
 
             this.transform.DORotate(e, duration).OnComplete(() => lookCamera.enabled = true);
 
-            Observable.Timer(TimeSpan.FromSeconds(duration + lifetime)).Subscribe(exit).AddTo(this);
+            disposable = Observable.Timer(TimeSpan.FromSeconds(duration + lifetime)).Subscribe(exit).AddTo(this);
         }
 
         private void exit(long _)
@@ -55,6 +57,20 @@ namespace Park.Enemy
         void Update()
         {
 
+        }
+
+        public void OnDead()
+        {
+            disposable.Dispose();
+
+            Observable.Timer(TimeSpan.FromSeconds(1f)).Subscribe(exit).AddTo(this);
+
+            var colliders = GetComponentsInChildren<BoxCollider>();
+
+            foreach (var c in colliders)
+            {
+                c.enabled = false;
+            }
         }
     }
 }
